@@ -1,0 +1,9 @@
+@font-face {
+  font-family: Monument_medium;
+  src: url("../asset/fonts/MonumentGrotesk-Medium.otf");
+}
+
+@font-face {
+  font-family: Monument_regular;
+  src: url("..//asset/fonts/MonumentGrotesk-Regular.otf");
+}

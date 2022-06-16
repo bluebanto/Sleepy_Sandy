@@ -1,0 +1,3099 @@
+body {
+  margin: 0;
+  height: 700vh;
+  width: 100vw;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  body {
+    height: 943vh;
+  }
+}
+
+div {
+  margin: 0;
+}
+
+/*---------------------------------------------------------------------------*/
+/*----------------------------       INDEX       ----------------------------*/
+/*---------------------------------------------------------------------------*/
+
+/*-------------------------------HEADER-------------------------------*/
+
+.header {
+  width: 100vw;
+  position: fixed;
+  top: 0vh;
+  left: 0;
+  display: none;
+  background-color: #fff384;
+  font-family: Monument_medium;
+  align-items: center;
+  height: 10vh;
+  z-index: 100;
+  opacity: 0;
+}
+
+.headerblack {
+  width: 100vw;
+  position: fixed;
+  top: 0vh;
+  left: 0;
+  display: flex;
+  background-color: #fff384;
+  font-family: Monument_medium;
+  align-items: center;
+  height: 10vh;
+  z-index: 99;
+  opacity: 1;
+}
+
+.logo {
+  padding: 0;
+  margin-left: 10vw;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .logo {
+    margin-left: 17vw;
+  }
+}
+
+.logob {
+  padding: 0;
+  margin-left: 10vw;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .logob {
+    margin-left: 17vw;
+  }
+}
+
+.menù {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin-left: 6vw;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .menù {
+    margin-left: 0;
+  }
+}
+
+.menù li {
+  display: inline-block;
+  padding: 10px;
+}
+
+.menù li a {
+  color: #000000;
+  text-decoration: none;
+  display: block;
+}
+@media screen and (max-width: 390px) {
+  /*  Telefono  */
+  .menù {
+    display: none;
+  }
+}
+
+.menùb {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin-left: 6vw;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .menùb {
+    margin-left: 0;
+  }
+}
+
+.menùb li {
+  display: inline-block;
+  padding: 10px;
+  color: #000000;
+}
+
+.menùb li a {
+  color: #000000;
+  text-decoration: none;
+  display: block;
+}
+
+@media screen and (max-width: 390px) {
+  /*  Telefono  */
+  .menùb {
+    display: none;
+  }
+}
+
+.cta {
+  margin-right: 10vw;
+  width: 140px;
+}
+
+@media screen and (max-width: 390px) {
+  /*  Telefono  */
+  .cta {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .cta {
+    margin-right: 7vw;
+  }
+}
+
+.button {
+  padding: 15px;
+  background-color: transparent;
+  color: #000000;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 50px;
+  font-family: Monument_medium;
+  width: 110px;
+  text-align: center;
+  margin-right: 10vw;
+  border: 2px solid black;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: transparent;
+  color: #f33949;
+  border: 2px solid #f33949;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .button {
+    margin-right: 12vw;
+  }
+}
+
+.buttonb {
+  padding: 15px;
+  background-color: transparent;
+  color: #000000;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 50px;
+  font-family: Monument_medium;
+  width: 110px;
+  text-align: center;
+  margin-right: 10vw;
+  border: 2px solid #000000;
+  transition: 0.3s;
+}
+
+.buttonb:hover {
+  background-color: transparent;
+  color: #f33949;
+  border: 2px solid #f33949;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .buttonb {
+    margin-right: 12vw;
+  }
+}
+
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 390px) {
+  /*  Telefono  */
+  .hamburger {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 10vw;
+  }
+}
+
+.hamburgerb {
+  display: none;
+}
+
+@media screen and (max-width: 390px) {
+  /*  Telefono  */
+  .hamburgerb {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 10vw;
+  }
+}
+
+.overlay {
+  height: 100vh;
+  width: 0;
+  position: fixed;
+  z-index: 100;
+  top: 10vh;
+  left: 0;
+  background-color: rgb(255, 243, 132);
+  overflow-x: hidden;
+  transition: 0.4s;
+}
+
+@media screen and (max-width: 390px) {
+  /*  Telefono  */
+  .breadup,
+  .meat,
+  .breaddown {
+    background-color: #000000;
+    display: block;
+    height: 3px;
+    margin-bottom: 33%;
+    transition: 0.4s;
+  }
+
+  .change .breadup {
+    transform: rotate(-45deg) translate(-6px, 8px);
+  }
+
+  .change .meat {
+    opacity: 0;
+  }
+
+  .change .breaddown {
+    transform: rotate(45deg) translate(-10px, -12px);
+  }
+
+  .breadupb,
+  .meatb,
+  .breaddownb {
+    background-color: #000000;
+    display: block;
+    height: 3px;
+    margin-bottom: 33%;
+    transition: 0.4s;
+  }
+
+  .changeb .breadupb {
+    transform: rotate(-45deg) translate(-6px, 8px);
+  }
+
+  .changeb .meatb {
+    opacity: 0;
+  }
+
+  .changeb .breaddownb {
+    transform: rotate(45deg) translate(-10px, -12px);
+  }
+
+  .menùol {
+    font-family: Monument_medium;
+    text-align: center;
+    position: relative;
+    top: 30vh;
+    padding: 10vw;
+    opacity: 0;
+    font-size: 7vw;
+  }
+
+  .menùol a {
+    text-decoration: none;
+    color: #000000;
+  }
+}
+
+/*-------------------------------TITOLO/CLAIM e CALL TO ACTION-------------------------------*/
+
+.hero {
+  background-color: #ffc5eb;
+  height: 230vh;
+  width: 100vw;
+  z-index: 1;
+  position: absolute;
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .hero {
+    background-color: #ffc5eb;
+  }
+}
+
+.aboutus {
+  top: 1vh;
+  left: 1vw;
+}
+
+.aboutus a {
+  font-family: Monument_medium;
+  text-decoration: none;
+  color: #000000;
+  position: fixed;
+  top: 3vh;
+  left: 2vw;
+  font-size: 1vw;
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .aboutus a {
+    color: #000000;
+    font-size: 3vw;
+    top: 1.2vh;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  /*  Telefono  */
+  .aboutus a {
+    display: none;
+  }
+}
+
+.scarica1 {
+  top: 1vh;
+  font-family: Monument_medium;
+  text-decoration: none;
+  color: #000000;
+  position: fixed;
+  top: 3vh;
+  left: 42vw;
+  font-size: 1vw;
+  display: block;
+}
+
+.scarica1mobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .scarica1 {
+    display: none;
+  }
+
+  .scarica1mobile {
+    top: 1vh;
+    font-family: Monument_medium;
+    text-decoration: none;
+    color: #000000;
+    position: fixed;
+    top: 1.2vh;
+    left: 82vw;
+    font-size: 3vw;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  /*  Telefono  */
+  .scarica1mobile {
+    display: none;
+  }
+}
+
+.loghinoiniz {
+  position: fixed;
+  height: 5vh;
+  top: 2vh;
+  left: 23vw;
+  display: block;
+}
+
+.loghinoinizmobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .loghinoiniz {
+    display: none;
+  }
+
+  .loghinoinizmobile {
+    position: fixed;
+    height: 4vh;
+    top: 0.4vh;
+    left: 50vw;
+    display: block;
+    transform: translate(-50%);
+  }
+}
+
+.titolo {
+  position: fixed;
+  top: 30vh;
+  margin: 0;
+  padding: 0;
+  font-family: Monument_medium;
+  width: 50vw;
+  z-index: 2;
+  text-align: center;
+  color: #000000;
+}
+
+.titolomobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .titolomobile {
+    display: block;
+    font-size: 25vw;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: Monument_medium;
+    width: 100vw;
+    z-index: 2;
+    text-align: left;
+    top: 64vh;
+  }
+  .titolo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  /*  Telefono  */
+  .titolomobile {
+    font-size: 36vw;
+  }
+}
+
+.freccinascroll {
+  background-image: url("../asset/freccinascroll.png");
+  background-size: 3000% 100%;
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+  z-index: 2;
+  position: absolute;
+  top: 87.5vh;
+  left: 22vw;
+  height: 5vw;
+  width: 5vw;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .freccinascroll {
+    background-image: url("../asset/freccinascrollnera.png");
+    top: 92vh;
+    left: 87vw;
+    height: 10vw;
+    width: 10vw;
+    transform: translate(-50%);
+  }
+}
+
+.video {
+  position: fixed;
+  top: 1vh;
+  right: 1vw;
+  width: 49vw;
+  height: 96.5vh;
+  overflow: hidden;
+  border-radius: 30px;
+  border: 2px solid #000000;
+  z-index: 3;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .video {
+    display: none;
+  }
+}
+
+.videomobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .videomobile {
+    display: block;
+    position: fixed;
+    top: 5vh;
+    right: 1vw;
+    width: 98vw;
+    height: 60vh;
+    overflow: hidden;
+    border-radius: 30px;
+    border: 2px solid #000000;
+    z-index: 3;
+  }
+}
+
+.calltoaction {
+  position: absolute;
+  font-family: Monument_medium;
+  font-size: 5vw;
+  z-index: 5;
+  width: 100vw;
+  top: 165vh;
+  color: #000000;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: left;
+  left: 0;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .calltoaction {
+    font-size: 15vw;
+    width: 80vw;
+    text-align: center;
+    transform: translate(-50%);
+    left: 50vw;
+  }
+}
+
+.bottonecta {
+  padding: 15px;
+  background-color: transparent;
+  color: black;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 50px;
+  border: 2px solid #000000;
+  font-family: Monument_medium;
+  font-size: 1.5vw;
+  width: 15vw;
+  text-align: center;
+  transition: 0.3s;
+  margin-top: 2vh;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .bottonecta {
+    width: 35vw;
+    font-size: 3.5vw;
+  }
+}
+
+.bottonecta:hover {
+  background-color: transparent;
+  color: #f6f6f6;
+  border: 2px solid #f6f6f6;
+}
+
+.atxt1 {
+  position: relative;
+  opacity: 0;
+  top: 1vh;
+}
+.atxt2 {
+  position: relative;
+  opacity: 0;
+  top: 1vh;
+}
+.atxt3 {
+  position: relative;
+  opacity: 0;
+  top: 1vh;
+}
+.atxt4 {
+  position: relative;
+  opacity: 0;
+  top: 1vh;
+}
+.atxt5 {
+  position: relative;
+  opacity: 0;
+  top: 1vh;
+}
+.atxt6 {
+  position: relative;
+  opacity: 0;
+  top: 1vh;
+}
+
+.atxt9 {
+  position: relative;
+  opacity: 0;
+  top: 1vh;
+}
+.atxt10 {
+  position: relative;
+  opacity: 0;
+  top: 1vh;
+}
+.atxt11 {
+  position: relative;
+  opacity: 0;
+  top: 1vh;
+}
+.atxt12 {
+  position: relative;
+  opacity: 0;
+  top: 1vh;
+}
+.atxt13 {
+  position: relative;
+  opacity: 0;
+  top: 1vh;
+}
+.atxt14 {
+  position: relative;
+  opacity: 0;
+  top: 1vh;
+}
+.atxt15 {
+  position: relative;
+  opacity: 0;
+  top: 1vh;
+}
+.atxt16 {
+  position: relative;
+  opacity: 0;
+  top: 1vh;
+}
+.atxt17 {
+  position: relative;
+  opacity: 0;
+  top: 1vh;
+}
+.atxt18 {
+  position: relative;
+  opacity: 0;
+  top: 1vh;
+}
+.atxt19 {
+  position: relative;
+  opacity: 0;
+  top: 1vh;
+}
+.atxt20 {
+  position: relative;
+  opacity: 0;
+  top: 1vh;
+}
+.atxt21 {
+  position: relative;
+  opacity: 0;
+  top: 1vh;
+}
+.atxt22 {
+  position: relative;
+  opacity: 0;
+  top: 1vh;
+}
+.atxt23 {
+  position: relative;
+  opacity: 0;
+  top: 1vh;
+}
+.atxt24 {
+  position: relative;
+  opacity: 0;
+  top: 1vh;
+}
+.atxt25 {
+  position: relative;
+  opacity: 0;
+  top: 1vh;
+}
+.atxt26 {
+  position: relative;
+  opacity: 0;
+  top: 1vh;
+}
+.atxt27 {
+  position: relative;
+  opacity: 0;
+  top: 1vh;
+}
+.atxt28 {
+  position: relative;
+  opacity: 0;
+  top: 1vh;
+}
+.atxt29 {
+  position: relative;
+  opacity: 0;
+  top: 1vh;
+}
+.atxt30 {
+  position: relative;
+  opacity: 0;
+  top: 1vh;
+}
+.atxt31 {
+  position: relative;
+  opacity: 0;
+  top: 1vh;
+}
+.atxt32 {
+  position: relative;
+  opacity: 0;
+  top: 1vh;
+}
+.atxt33 {
+  position: relative;
+  opacity: 0;
+  top: 1vh;
+}
+.atxt34 {
+  position: relative;
+  opacity: 0;
+  top: 1vh;
+}
+
+.atxt36 {
+  position: relative;
+  opacity: 0;
+  top: 1vh;
+}
+.atxt37 {
+  position: relative;
+  opacity: 0;
+  top: 1vh;
+}
+.atxt38 {
+  position: relative;
+  opacity: 0;
+  top: 1vh;
+}
+.atxt39 {
+  position: relative;
+  opacity: 0;
+  top: 1vh;
+}
+.atxt40 {
+  position: relative;
+  opacity: 0;
+  top: 1vh;
+}
+.atxt41 {
+  position: relative;
+  opacity: 0;
+  top: 1vh;
+}
+.atxt42 {
+  position: relative;
+  opacity: 0;
+  top: 1vh;
+}
+.atxt43 {
+  position: relative;
+  opacity: 0;
+  top: 1vh;
+}
+.atxt44 {
+  position: relative;
+  opacity: 0;
+  top: 1vh;
+}
+.atxt45 {
+  position: relative;
+  opacity: 0;
+  top: 1vh;
+}
+
+/*-------------------------------COSA FA SLEEPY SANDY?-------------------------------*/
+
+.cosafacciamo {
+  background-color: #ffc5eb;
+  top: 230vh;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.titoletto {
+  position: absolute;
+  top: 20vh;
+  margin: 0;
+  padding: 0;
+  font-family: Monument_medium;
+  font-size: 2vw;
+  width: 100vw;
+  z-index: 2;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .titoletto {
+    font-size: 5vw;
+    top: 5vh;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  /*  Telefono  */
+  .titoletto {
+    font-size: 7vw;
+    top: 9vh;
+  }
+}
+
+.statement {
+  position: relative;
+  top: 30vh;
+  margin: 0;
+  padding: 0;
+  font-family: Monument_medium;
+  font-size: 4vw;
+  width: 100vw;
+  z-index: 2;
+  text-align: center;
+  display: block;
+}
+
+.statementmobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .statementmobile {
+    position: relative;
+    top: 15vh;
+    margin: 0;
+    padding: 0;
+    font-family: Monument_medium;
+    font-size: 7vw;
+    width: 90vw;
+    z-index: 2;
+    text-align: left;
+    display: block;
+    left: 3vw;
+  }
+
+  .statement {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  /*  Telefono  */
+  .statementmobile {
+    font-size: 9vw;
+    top: 20vh;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  /*  Telefono piccolo  */
+  .statementmobile {
+    top: 20vh;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  /*  Telefono piccolo piccolo  */
+  .statementmobile {
+    top: 18vh;
+  }
+}
+
+.esplora {
+  position: relative;
+  top: 40vh;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  width: 13vw;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .esplora {
+    top: 20vh;
+    width: 30vw;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  /*  Telefono  */
+  .esplora {
+    top: 30vh;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  /*  Telefono piccolo  */
+  .esplora {
+    top: 23.5vh;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  /*  Telefono piccolo piccolo  */
+  .esplora {
+    top: 27vh;
+  }
+}
+
+.bottoneesplora {
+  padding: 15px;
+  background-color: transparent;
+  color: #000000;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 50px;
+  font-family: Monument_medium;
+  font-size: 1.5vw;
+  width: 13vw;
+  text-align: center;
+  transition: 0.3s;
+  border: 2px solid black;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .bottoneesplora {
+    font-size: 3vw;
+    width: 30vw;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  /*  Telefono  */
+  .bottoneesplora {
+    font-size: 5vw;
+  }
+}
+
+.bottoneesplora:hover {
+  background-color: transparent;
+  color: #f33949;
+  border: 2px solid #f33949;
+}
+
+/*-------------------------------COSA FAI-------------------------------*/
+
+.cosafa {
+  background-color: #ffc5eb;
+  top: 330vh;
+  height: 350vh;
+  width: 100vw;
+  z-index: 1;
+  position: absolute;
+  display: block;
+  align-items: center;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .cosafai {
+    display: none;
+  }
+}
+
+.titolettosl {
+  position: absolute;
+  top: 10vh;
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  font-family: Monument_medium;
+  font-size: 2vw;
+  width: 100vw;
+  z-index: 2;
+  text-align: center;
+}
+
+.slide1 {
+  background-color: #ff5209;
+  border-radius: 30px;
+  border: 2px solid #000000;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  height: 60vh;
+  width: 60vw;
+  z-index: 2;
+  display: block;
+  align-items: center;
+  align-content: center;
+  top: 20vh;
+  left: 50vw;
+  transform: translate(-50%, 0%);
+}
+
+.organizza {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 3vh;
+  left: 2vw;
+  font-family: Monument_medium;
+  font-size: 2vw;
+  width: 10vw;
+  z-index: 2;
+  text-align: left;
+}
+
+.copyorganizza {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 10vh;
+  left: 2vw;
+  font-family: Monument_medium;
+  font-size: 2.4vw;
+  width: 30vw;
+  z-index: 2;
+  text-align: left;
+}
+
+.img1 {
+  position: absolute;
+  margin: 0;
+  padding: 1vw;
+  right: 0;
+  z-index: 2;
+}
+
+.bottonescopri {
+  padding: 15px;
+  background-color: transparent;
+  position: absolute;
+  color: #000000;
+  border: 2px solid black;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 50px;
+  font-family: Monument_medium;
+  font-size: 1.5vw;
+  width: 13vw;
+  text-align: center;
+  top: 45vh;
+  left: 8vw;
+  transition: 0.3s;
+}
+
+.bottonescopri:hover {
+  background-color: transparent;
+  border: 2px solid #f6f6f6;
+  color: #f6f6f6;
+}
+
+.slide2 {
+  background-color: #f33949;
+  border-radius: 30px;
+  border: 2px solid #000000;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  height: 60vh;
+  width: 60vw;
+  z-index: 2;
+  display: block;
+  align-items: center;
+  align-content: center;
+  top: 20vh;
+  left: 85vw;
+}
+
+.gioca {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 3vh;
+  left: 2vw;
+  font-family: Monument_medium;
+  font-size: 2vw;
+  width: 10vw;
+  z-index: 2;
+  text-align: left;
+}
+
+.copygioca {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 10vh;
+  left: 2vw;
+  font-family: Monument_medium;
+  font-size: 2.4vw;
+  width: 30vw;
+  z-index: 2;
+  text-align: left;
+}
+
+.img2 {
+  position: absolute;
+  margin: 0;
+  padding: 1vh;
+  right: 2vw;
+  z-index: 2;
+}
+
+.slide3 {
+  background-color: #ff5209;
+  border-radius: 30px;
+  border: 2px solid #000000;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  height: 60vh;
+  width: 60vw;
+  z-index: 2;
+  display: block;
+  align-items: center;
+  align-content: center;
+  top: 20vh;
+  left: 150vw;
+}
+
+.condividi {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 3vh;
+  left: 2vw;
+  font-family: Monument_medium;
+  font-size: 2vw;
+  width: 10vw;
+  z-index: 2;
+  text-align: left;
+}
+
+.copycondividi {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 10vh;
+  left: 2vw;
+  font-family: Monument_medium;
+  font-size: 2.4vw;
+  width: 30vw;
+  z-index: 2;
+  text-align: left;
+}
+
+.img3 {
+  position: absolute;
+  margin: 0;
+  padding: 1vh;
+  right: 2vw;
+  z-index: 2;
+  border: 2px solid #000000;
+}
+
+.slide1mobile {
+  display: none;
+}
+
+.slide2mobile {
+  display: none;
+}
+
+.slide3mobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .slide1mobile {
+    display: block;
+    width: 100vw;
+    position: absolute;
+    top: 330vh;
+    height: 100vh;
+    background-color: #ff5209;
+  }
+
+  .slide2mobile {
+    display: block;
+    width: 100vw;
+    position: absolute;
+    top: 430vh;
+    height: 100vh;
+    background-color: #f33949;
+  }
+
+  .slide3mobile {
+    display: block;
+    width: 100vw;
+    position: absolute;
+    top: 530vh;
+    height: 100vh;
+    background-color: #ff5209;
+  }
+}
+
+.imgslmobile {
+  width: 60vw;
+  left: 20vw;
+  top: 4vh;
+  height: 45vh;
+  position: absolute;
+  overflow: hidden;
+  border-radius: 30px;
+  border: 2px solid #000000;
+}
+
+@media screen and (max-width: 390px) {
+  /*  Telefono  */
+  .imgslmobile {
+    width: 90vw;
+    left: 5vw;
+  }
+}
+
+.titolettoslmobile {
+  position: absolute;
+  top: 52vh;
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  font-family: Monument_medium;
+  font-size: 4vw;
+  width: 20vw;
+  z-index: 2;
+  text-align: left;
+  left: 5vw;
+}
+
+@media screen and (max-width: 390px) {
+  /*  Telefono  */
+  .titolettoslmobile {
+    font-size: 6vw;
+  }
+}
+
+.testoslmobile {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 58vh;
+  left: 5vw;
+  font-family: Monument_medium;
+  font-size: 6vw;
+  width: 90vw;
+  z-index: 2;
+  text-align: left;
+}
+
+@media screen and (max-width: 390px) {
+  /*  Telefono  */
+  .testoslmobile {
+    font-size: 8vw;
+  }
+}
+
+.bottoneslmobile {
+  padding: 15px;
+  background-color: transparent;
+  position: absolute;
+  color: #000000;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 50px;
+  font-family: Monument_medium;
+  font-size: 3vw;
+  width: 30vw;
+  text-align: center;
+  top: 89vh;
+  left: 50vw;
+  transform: translate(-50%);
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 390px) {
+  /*  Telefono  */
+  .bottoneslmobile {
+    font-size: 5vw;
+    width: 40vw;
+    top: 86.5vh;
+  }
+}
+
+/*-------------------------------OBIETTIVI-------------------------------*/
+
+.obiettivi {
+  background-color: #ffc5eb;
+  top: 680vh;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+  position: absolute;
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .obiettivi {
+    top: 630vh;
+    flex-direction: column;
+  }
+}
+
+.statement2 {
+  position: absolute;
+  top: 30vh;
+  left: 4vw;
+  margin: 0;
+  padding: 0;
+  font-family: Monument_medium;
+  font-size: 4vw;
+  width: 45vw;
+  z-index: 2;
+  text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .statement2 {
+    display: none;
+  }
+}
+
+.screencommunity {
+  position: absolute;
+  margin: 0;
+  padding: 1vw;
+  top: 30vh;
+  width: 40vw;
+  height: 60vh;
+  right: 4vw;
+  vertical-align: middle;
+  z-index: 2;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .screencommunity {
+    left: 4vw;
+    width: 90vw;
+    top: 60vh;
+    height: 35vh;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  /*  Telefono  */
+  .screencommunity {
+    top: 63vh;
+    height: 33vh;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  /*  Telefono piccolo  */
+  .screencommunity {
+    top: 70vh;
+    height: 26vh;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  /*  Telefono piccolo piccolo  */
+  .screencommunity {
+    top: 63vh;
+    height: 33vh;
+  }
+}
+
+/*-------------------------------I NOSTRI PERSONAGGI-------------------------------*/
+
+/*-------------------------------VEDI IL NOSTRO VIDEO-------------------------------*/
+
+.ctadadefinire1 {
+  background-color: #ffc5eb;
+  top: 880vh;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .ctadadefinire1 {
+    top: 830vh;
+  }
+}
+
+.statement3 {
+  position: relative;
+  top: 30vh;
+  margin: 0;
+  padding: 0;
+  font-family: Monument_medium;
+  font-size: 5vw;
+  line-height: 12vh;
+  width: 100vw;
+  z-index: 2;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .statement3 {
+    display: none;
+  }
+}
+
+.scarica {
+  position: relative;
+  top: 40vh;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  width: 13vw;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+
+.bottonescarica {
+  padding: 15px;
+  background-color: transparent;
+  color: #000000;
+  border: 2px solid #000000;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 50px;
+  font-family: Monument_medium;
+  font-size: 1.5vw;
+  width: 13vw;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.bottonescarica:hover {
+  background-color: transparent;
+  color: #f33949;
+  border: 2px solid #f33949;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .scarica {
+    width: 30vw;
+  }
+  .bottonescarica {
+    font-size: 3vw;
+    width: 30vw;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  /*  Telefono  */
+  .scarica {
+    width: 50vw;
+  }
+  .bottonescarica {
+    font-size: 5vw;
+    width: 50vw;
+  }
+}
+
+/*-------------------------------FOOTER-------------------------------*/
+.footer {
+  background-color: #fff384;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  color: #000000;
+  font-family: Monument_medium;
+  font-size: 1.5vw;
+  width: 100vw;
+  height: 33vh;
+  top: 980vh;
+  margin: 0;
+  text-align: left;
+  z-index: 100;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .footer {
+    top: 930vh;
+    height: 20vh;
+  }
+}
+
+.footerup {
+  display: flex;
+  justify-content: space-around;
+  padding: 10vh;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .footerup {
+    padding: 3vh;
+  }
+}
+
+.blocchetto a {
+  display: flex;
+  flex-direction: column;
+  color: #000000;
+  font-family: Monument_medium;
+  font-size: 1vw;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .blocchetto a {
+    font-size: 3vw;
+  }
+}
+
+.footerdown {
+  color: #000000;
+  font-family: Monument_medium;
+  font-size: 0.5vw;
+  width: 50vw;
+  position: relative;
+  left: 37.5vw;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .footerdown {
+    font-size: 1.8vw;
+    left: 2vw;
+    width: 98vw;
+  }
+}
+
+/*-------------------------------TRIGGER INDEX-------------------------------*/
+
+.trigger1 {
+  position: absolute;
+  top: 52vh;
+  left: 0;
+  width: 10vw;
+  height: 1px;
+  border: 1px solid rebeccapurple;
+  z-index: 1000;
+  display: none;
+}
+
+.trigger2 {
+  position: absolute;
+  top: 0vh;
+  left: 0;
+  width: 10vw;
+  height: 8vh;
+  border: 1px solid rebeccapurple;
+  z-index: 1000;
+  display: none;
+}
+
+.trigger3 {
+  position: absolute;
+  top: 40vh;
+  left: 0;
+  width: 10vw;
+  height: 24vh;
+  border: 1px solid rebeccapurple;
+  z-index: 1000;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .trigger3 {
+    top: 30vh;
+    height: 15vh;
+  }
+}
+
+.trigger4 {
+  position: absolute;
+  top: 52vh;
+  left: 0;
+  width: 10vw;
+  height: 12vh;
+  border: 1px solid rebeccapurple;
+  z-index: 1000;
+  display: none;
+}
+
+.trigger5 {
+  position: absolute;
+  top: 80vh;
+  left: 0;
+  width: 10vw;
+  height: 10vh;
+  border: 1px solid rebeccapurple;
+  z-index: 1000;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .trigger5 {
+    top: 50vh;
+  }
+}
+
+.trigger6 {
+  position: absolute;
+  top: 100vh;
+  left: 0;
+  width: 10vw;
+  height: 30vh;
+  border: 1px solid rebeccapurple;
+  z-index: 1000;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .trigger6 {
+    top: 90vh;
+  }
+}
+
+.trigger7 {
+  position: absolute;
+  top: 130vh;
+  left: 0;
+  width: 10vw;
+  height: 1px;
+  border: 1px solid rebeccapurple;
+  z-index: 1000;
+  display: none;
+}
+
+.trigger8 {
+  position: absolute;
+  top: 110vh;
+  left: 0;
+  width: 10vw;
+  height: 1px;
+  border: 1px solid rebeccapurple;
+  z-index: 1000;
+  display: none;
+}
+
+.trigger9 {
+  position: absolute;
+  top: 870vh;
+  left: 0;
+  width: 10vw;
+  height: 1px;
+  border: 1px solid black;
+  z-index: 1000;
+  display: none;
+}
+
+.trigger10 {
+  position: absolute;
+  top: 190vh;
+  left: 0;
+  width: 10vw;
+  height: 1px;
+  border: 1px solid black;
+  z-index: 1000;
+  display: none;
+}
+
+.trigger11 {
+  position: absolute;
+  top: 640vh;
+  left: 0;
+  width: 10vw;
+  height: 1px;
+  border: 1px solid black;
+  z-index: 1000;
+  display: none;
+}
+
+.triggerheaderb1 {
+  position: absolute;
+  top: 220vh;
+  left: 0;
+  width: 10vw;
+  height: 1px;
+  border: 1px solid black;
+  z-index: 1000;
+  display: none;
+}
+
+.triggerheaderb2 {
+  position: absolute;
+  top: 670vh;
+  left: 0;
+  width: 10vw;
+  height: 1px;
+  border: 1px solid black;
+  z-index: 1000;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .triggerheaderb2 {
+    top: 620vh;
+  }
+}
+
+.triggerheaderw1 {
+  position: absolute;
+  top: 320vh;
+  left: 0;
+  width: 10vw;
+  height: 1px;
+  border: 1px solid black;
+  z-index: 1000;
+  display: none;
+}
+
+.triggerslider {
+  position: absolute;
+  top: 320vh;
+  left: 0;
+  width: 10vw;
+  height: 260vh;
+  border: 1px solid rebeccapurple;
+  z-index: 1000;
+  display: none;
+}
+
+.triggerslc1 {
+  position: absolute;
+  top: 420vh;
+  left: 0;
+  width: 10vw;
+  height: 1px;
+  border: 1px solid gold;
+  z-index: 1000;
+  display: none;
+}
+
+.triggerslc2 {
+  position: absolute;
+  top: 550vh;
+  left: 0;
+  width: 10vw;
+  height: 1px;
+  border: 1px solid gold;
+  z-index: 1000;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .triggerslc2 {
+    top: 520vh;
+  }
+}
+
+.triggerheaderw2 {
+  position: absolute;
+  top: 770vh;
+  left: 0;
+  width: 10vw;
+  height: 1px;
+  border: 1px solid black;
+  z-index: 1000;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .triggerheaderw2 {
+    top: 720vh;
+  }
+}
+
+.triggerrec {
+  position: absolute;
+  top: 720vh;
+  left: 0;
+  width: 10vw;
+  height: 50vh;
+  border: 1px solid rebeccapurple;
+  z-index: 1000;
+  display: none;
+}
+
+/*---------------------------------------------------------------------------*/
+/*----------------------------   SCOPRI DI PIÙ   ----------------------------*/
+/*---------------------------------------------------------------------------*/
+
+/*-------------------------------HEADER 1 & FOOTER-------------------------------*/
+.header1 {
+  width: 100vw;
+  position: fixed;
+  top: 0vh;
+  left: 0;
+  display: flex;
+  background-color: #fff384;
+  font-family: Monument_medium;
+  align-items: center;
+  height: 10vh;
+  z-index: 100;
+  opacity: 1;
+}
+
+.headerblack1 {
+  width: 100vw;
+  position: fixed;
+  top: 0vh;
+  left: 0;
+  display: none;
+  background-color: #fff384;
+  font-family: Monument_medium;
+  align-items: center;
+  height: 10vh;
+  z-index: 101;
+  opacity: 0;
+}
+
+.footerscopri {
+  background-color: #fff384;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  color: #000000;
+  font-family: Monument_medium;
+  font-size: 1.5vw;
+  width: 100vw;
+  height: 33vh;
+  top: 700vh;
+  margin: 0;
+  text-align: left;
+  z-index: 100;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .footerscopri {
+    height: 20vh;
+  }
+}
+/*-------------------------------SCOPRI: ORGANIZZA-------------------------------*/
+.audioplayer {
+  position: fixed;
+  display: flex;
+  bottom: 6vh;
+  right: 0vw;
+  z-index: 100;
+  width: 12.5vw;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .audioplayer {
+    display: none;
+  }
+}
+
+.rotate {
+  animation: rotation 5s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+/*-------------------------------SCOPRI: ORGANIZZA-------------------------------*/
+
+.scopri_organizza {
+  background-color: #ffc5eb;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+  position: absolute;
+}
+
+.titoletto3 {
+  position: relative;
+  top: 15vh;
+  margin: 0;
+  padding: 0;
+  font-family: Monument_medium;
+  font-size: 2vw;
+  width: 100vw;
+  z-index: 2;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .titoletto3 {
+    font-size: 5vw;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  /*  Telefono  */
+  .titoletto3 {
+    font-size: 6.5vw;
+  }
+}
+
+.statement4 {
+  position: relative;
+  top: 20vh;
+  left: 5vw;
+  margin: 0;
+  padding: 0;
+  font-family: Monument_medium;
+  font-size: 5vw;
+  line-height: 12vh;
+  width: 90vw;
+  z-index: 2;
+  text-align: left;
+}
+
+.statement4mobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .statement4 {
+    display: none;
+  }
+
+  .statement4mobile {
+    position: absolute;
+    bottom: 1vh;
+    left: 5vw;
+    margin: 0;
+    padding: 0;
+    font-family: Monument_medium;
+    font-size: 8.5vw;
+    width: 90vw;
+    z-index: 2;
+    text-align: left;
+    display: block;
+  }
+}
+
+/*-------------------------------SCREEN ORGANIZZA-------------------------------*/
+
+.screen_organizza {
+  background-color: #f33949;
+  top: 100vh;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  vertical-align: baseline;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .screen_organizza {
+    display: none;
+  }
+}
+
+.ctascreen {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-family: Monument_medium;
+  font-size: 2vw;
+  width: 32vw;
+  text-align: center;
+  z-index: 2;
+  margin-bottom: 3vh;
+  margin-top: 15vh;
+}
+
+.txtscreen {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-family: Monument_medium;
+  font-size: 1vw;
+  width: 32vw;
+  text-align: center;
+  z-index: 2;
+}
+
+.imgscreen1 {
+  width: 32vw;
+  height: 10vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  overflow: hidden;
+}
+
+.imgscreen2 {
+  width: 32vw;
+  height: 50vh;
+  overflow: hidden;
+}
+
+.imgscreen3 {
+  width: 32vw;
+  height: 30vh;
+  overflow: hidden;
+}
+
+.imgscreen4 {
+  width: 32vw;
+  height: 10vh;
+  overflow: hidden;
+}
+
+.imgscreen5 {
+  width: 32vw;
+  height: 50vh;
+  overflow: hidden;
+}
+
+.imgscreen6 {
+  width: 32vw;
+  height: 30vh;
+  overflow: hidden;
+}
+
+.imgscreen7 {
+  width: 32vw;
+  height: 10vh;
+  overflow: hidden;
+}
+
+.imgscreen8 {
+  width: 32vw;
+  height: 50vh;
+  overflow: hidden;
+}
+
+.imgscreen9 {
+  width: 32vw;
+  height: 30vh;
+  overflow: hidden;
+}
+
+.screenmobileorganizza {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .screenmobileorganizza {
+    display: flex;
+    position: absolute;
+    background-color: #ffc5eb;
+    top: 100vh;
+    height: 100vh;
+    width: 100vw;
+    overflow: scroll;
+  }
+}
+
+.screen1mobile {
+  position: relative;
+  background-color: #f33949;
+  height: 85vh;
+  top: 6vh;
+  width: 90vw;
+  margin: 2vw;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.screen2mobile {
+  position: relative;
+  background-color: #f33949;
+  height: 85vh;
+  top: 6vh;
+  width: 90vw;
+  margin: 2vw;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.screen3mobile {
+  position: relative;
+  background-color: #f33949;
+  height: 85vh;
+  top: 6vh;
+  width: 90vw;
+  margin: 2vw;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 390px) {
+  /*  Telefono  */
+  .screen1mobile {
+    margin: 4vw;
+  }
+
+  .screen2mobile {
+    margin: 4vw;
+  }
+
+  .screen3mobile {
+    margin: 4vw;
+  }
+}
+
+.ctascreenmobile {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-family: Monument_medium;
+  font-size: 8.5vw;
+  width: 90vw;
+  text-align: center;
+  z-index: 2;
+  margin-bottom: 3vh;
+  margin-top: 3.5vh;
+}
+
+.txtscreenmobile {
+  font-family: Monument_medium;
+  font-size: 3vw;
+  margin-left: 5vw;
+  width: 80vw;
+  text-align: center;
+}
+
+.imgscreenmobile {
+  overflow: hidden;
+  margin: 5vh;
+}
+
+@media screen and (max-width: 390px) {
+  /*  Telefono  */
+  .imgscreenmobile {
+    margin: 3vh;
+  }
+}
+/*-------------------------------SCOPRI: GIOCA-------------------------------*/
+
+#scopri_gioca {
+  background-color: #ffc5eb;
+  top: 200vh;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+  position: absolute;
+}
+
+/*-------------------------------SCREEN GIOCA-------------------------------*/
+
+.screen_gioca {
+  background-color: #f33949;
+  top: 300vh;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .screen_gioca {
+    display: none;
+  }
+}
+
+.screenmobilegioca {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .screenmobilegioca {
+    display: flex;
+    position: absolute;
+    background-color: #ffc5eb;
+    top: 300vh;
+    height: 100vh;
+    width: 100vw;
+    overflow: scroll;
+  }
+}
+
+/*-------------------------------SCOPRI: CONDIVIDI-------------------------------*/
+
+#scopri_condividi {
+  background-color: #ffc5eb;
+  top: 400vh;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+  position: absolute;
+}
+
+/*-------------------------------SCREEN CONDIVIDI-------------------------------*/
+
+.screen_condividi {
+  background-color: #f33949;
+  top: 500vh;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .screen_condividi {
+    display: none;
+  }
+}
+
+.screenmobilecondividi {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .screenmobilecondividi {
+    display: flex;
+    position: absolute;
+    background-color: #ffc5eb;
+    top: 500vh;
+    height: 100vh;
+    width: 100vw;
+    overflow: scroll;
+  }
+}
+
+/*-------------------------------CAMERETTA 2-------------------------------*/
+
+.ctadadefinire2 {
+  background-color: #ffc5eb;
+  top: 600vh;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*-------------------------------TRIGGER SCOPRI-------------------------------*/
+
+.triggers1 {
+  position: absolute;
+  top: 90vh;
+  left: 0;
+  width: 10vw;
+  height: 1px;
+  border: 1px solid gold;
+  z-index: 1000;
+  display: none;
+}
+
+.triggersc1 {
+  position: absolute;
+  top: 70vh;
+  left: 0;
+  width: 10vw;
+  height: 1px;
+  border: 1px solid gold;
+  z-index: 1000;
+  display: none;
+}
+
+.triggers2 {
+  position: absolute;
+  top: 190vh;
+  left: 0;
+  width: 10vw;
+  height: 1px;
+  border: 1px solid gold;
+  z-index: 1000;
+  display: none;
+}
+
+.triggersc2 {
+  top: 170vh;
+  position: absolute;
+  left: 0;
+  width: 10vw;
+  height: 1px;
+  border: 1px solid gold;
+  z-index: 1000;
+  display: none;
+}
+
+.triggers3 {
+  position: absolute;
+  top: 290vh;
+  left: 0;
+  width: 10vw;
+  height: 1px;
+  border: 1px solid gold;
+  z-index: 1000;
+  display: none;
+}
+
+.triggersc3 {
+  position: absolute;
+  top: 270vh;
+  left: 0;
+  width: 10vw;
+  height: 1px;
+  border: 1px solid gold;
+  z-index: 1000;
+  display: none;
+}
+
+.triggers4 {
+  position: absolute;
+  top: 390vh;
+  left: 0;
+  width: 10vw;
+  height: 1px;
+  border: 1px solid gold;
+  z-index: 1000;
+  display: none;
+}
+
+.triggersc4 {
+  position: absolute;
+  top: 370vh;
+  left: 0;
+  width: 10vw;
+  height: 1px;
+  border: 1px solid gold;
+  z-index: 1000;
+  display: none;
+}
+
+.triggers5 {
+  position: absolute;
+  top: 490vh;
+  left: 0;
+  width: 10vw;
+  height: 1px;
+  border: 1px solid gold;
+  z-index: 1000;
+  display: none;
+}
+
+.triggersc5 {
+  position: absolute;
+  top: 470vh;
+  left: 0;
+  width: 10vw;
+  height: 1px;
+  border: 1px solid gold;
+  z-index: 1000;
+  display: none;
+}
+
+.triggers6 {
+  position: absolute;
+  top: 590vh;
+  left: 0;
+  width: 10vw;
+  height: 1px;
+  border: 1px solid gold;
+  z-index: 1000;
+  display: none;
+}
+
+.triggersc6 {
+  position: absolute;
+  top: 570vh;
+  left: 0;
+  width: 10vw;
+  height: 1px;
+  border: 1px solid gold;
+  z-index: 1000;
+  display: none;
+}
+
+.triggerscreen1 {
+  position: absolute;
+  top: 10vh;
+  left: 0;
+  width: 10vw;
+  height: 50vw;
+  border: 1px solid black;
+  z-index: 1000;
+  display: none;
+}
+
+.triggerscreen2 {
+  position: absolute;
+  top: 200vh;
+  left: 0;
+  width: 10vw;
+  height: 50vw;
+  border: 1px solid black;
+  z-index: 1000;
+  display: none;
+}
+
+.triggerscreen3 {
+  position: absolute;
+  top: 400vh;
+  left: 0;
+  width: 10vw;
+  height: 50vw;
+  border: 1px solid black;
+  z-index: 1000;
+  display: none;
+}
+/*-------------------------------CHI SIAMO-------------------------------*/
+
+.headerblack2 {
+  width: 100vw;
+  position: fixed;
+  top: 0vh;
+  left: 0;
+  display: none;
+  background-color: #fff384;
+  font-family: Monument_medium;
+  align-items: center;
+  height: 10vh;
+  z-index: 101;
+  opacity: 0;
+}
+
+.header2 {
+  width: 100vw;
+  position: fixed;
+  top: 0vh;
+  left: 0;
+  display: flex;
+  background-color: #fff384;
+  font-family: Monument_medium;
+  align-items: center;
+  height: 10vh;
+  z-index: 100;
+  opacity: 1;
+}
+
+/*-------------------------------VALORI-------------------------------*/
+
+.valori {
+  background-color: #ffc5eb;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+  position: absolute;
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .valori {
+    flex-direction: column;
+  }
+}
+
+.video1 {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 30vh;
+  right: 5vw;
+  width: 43vw;
+  height: 60vh;
+  overflow: hidden;
+  border-radius: 25px;
+  border: 2px solid black;
+  z-index: 3;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .video1 {
+    top: 22vh;
+    width: 90vw;
+    height: 40vh;
+  }
+}
+
+.statementmobile2 {
+  position: relative;
+  top: 60vh;
+  margin: 0;
+  padding: 0;
+  font-family: Monument_medium;
+  font-size: 6vw;
+  width: 90vw;
+  left: 5vw;
+  z-index: 2;
+  text-align: left;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .statementmobile2 {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  /*  Telefono  */
+  .statementmobile2 {
+    font-size: 8vw;
+    top: 62vh;
+  }
+}
+
+/*-------------------------------VALORI SLIDE-------------------------------*/
+
+.valorislide {
+  background-color: #ffc5eb;
+  margin: 0;
+  padding: 0;
+  top: 100vh;
+  height: 350vh;
+  width: 100vw;
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .valorislide {
+    display: none;
+  }
+}
+
+.slidesx {
+  display: flex;
+  flex-direction: column;
+}
+
+.descrizione {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  left: 2vw;
+  bottom: 3vh;
+  font-family: Monument_regular;
+  font-size: 1.4vw;
+  width: 30vw;
+  text-align: left;
+  z-index: 2;
+}
+
+.img1 {
+  margin: 0;
+  padding: 0;
+  right: 2vw;
+  top: 3.5vh;
+  width: 27vw;
+  height: 53vh;
+  overflow: hidden;
+  border-radius: 25px;
+  border: 2px solid #000000;
+}
+
+.img2 {
+  margin: 0;
+  padding: 0;
+  right: 2vw;
+  top: 3.5vh;
+  width: 27vw;
+  height: 53vh;
+  overflow: hidden;
+  border-radius: 25px;
+  border: 2px solid #000000;
+}
+
+.img3 {
+  margin: 0;
+  padding: 0;
+  right: 2vw;
+  top: 3.5vh;
+  width: 27vw;
+  height: 53vh;
+  overflow: hidden;
+  border-radius: 25px;
+  border: 2px solid #000000;
+}
+
+.slidec1 {
+  background-color: #ff5209;
+  border-radius: 30px;
+  border: 2px solid black;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  height: 60vh;
+  width: 60vw;
+  z-index: 2;
+  display: block;
+  align-items: center;
+  align-content: center;
+  top: 20vh;
+  left: 50vw;
+  transform: translate(-50%, 0%);
+}
+
+.slidec2 {
+  background-color: #f33949;
+  border-radius: 30px;
+  border: 2px solid black;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  height: 60vh;
+  width: 60vw;
+  z-index: 2;
+  display: block;
+  align-items: center;
+  align-content: center;
+  top: 20vh;
+  left: 85vw;
+}
+
+.slidec3 {
+  background-color: #ff5209;
+  border-radius: 30px;
+  border: 2px solid black;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  height: 60vh;
+  width: 60vw;
+  z-index: 2;
+  display: block;
+  align-items: center;
+  align-content: center;
+  top: 20vh;
+  left: 150vw;
+}
+
+.titolettosl2 {
+  position: absolute;
+  top: 10vh;
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  font-family: Monument_medium;
+  font-size: 2vw;
+  width: 100vw;
+  z-index: 2;
+  text-align: center;
+}
+
+.slide1mobilecs {
+  display: none;
+}
+
+.slide2mobilecs {
+  display: none;
+}
+
+.slide3mobilecs {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .slide1mobilecs {
+    display: block;
+    width: 100vw;
+    position: absolute;
+    top: 100vh;
+    height: 100vh;
+    background-color: #a07eff;
+  }
+
+  .slide2mobilecs {
+    display: block;
+    width: 100vw;
+    position: absolute;
+    top: 200vh;
+    height: 100vh;
+    background-color: #dfff9c;
+  }
+
+  .slide3mobilecs {
+    display: block;
+    width: 100vw;
+    position: absolute;
+    top: 300vh;
+    height: 100vh;
+    background-color: #fa4928;
+  }
+}
+
+.titolettoslmobilecs {
+  position: absolute;
+  top: 55vh;
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-family: Monument_medium;
+  font-size: 6vw;
+  width: 20vw;
+  z-index: 2;
+  text-align: left;
+  left: 5vw;
+}
+
+@media screen and (max-width: 390px) {
+  /*  Telefono  */
+  .titolettoslmobilecs {
+    font-size: 8vw;
+  }
+}
+
+.testoslmobilecs {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 65vh;
+  left: 5vw;
+  font-family: Monument_medium;
+  font-size: 6vw;
+  width: 90vw;
+  z-index: 2;
+  text-align: left;
+}
+
+@media screen and (max-width: 390px) {
+  /*  Telefono  */
+  .testoslmobilecs {
+    font-size: 8vw;
+  }
+}
+/*-------------------------------CREW-------------------------------*/
+
+.crew {
+  background-color: #f33949;
+  top: 450vh;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  text-align: center;
+  overflow: auto;
+  white-space: nowrap;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .crew {
+    top: 400vh;
+  }
+}
+
+.antonio {
+  top: 30vh;
+  margin: 1vw;
+  background-color: #f6f6f6;
+  border-radius: 25px;
+  border: 2px solid #000000;
+  height: 60vh;
+}
+
+.michela {
+  top: 30vh;
+  margin: 1vw;
+  background-color: #f6f6f6;
+  border-radius: 25px;
+  border: 2px solid #000000;
+  height: 60vh;
+}
+
+.ilaria {
+  top: 30vh;
+  margin: 1vw;
+  background-color: #f6f6f6;
+  border-radius: 25px;
+  border: 2px solid #000000;
+  height: 60vh;
+}
+
+.martino {
+  top: 30vh;
+  margin: 1vw;
+  background-color: #f6f6f6;
+  border-radius: 25px;
+  border: 2px solid #000000;
+  height: 60vh;
+}
+
+.elisabetta {
+  top: 30vh;
+  margin: 1vw;
+  background-color: #f6f6f6;
+  border-radius: 25px;
+  border: 2px solid #000000;
+  height: 60vh;
+}
+
+.imgcrew1 {
+  margin: 0;
+  padding: 0;
+  height: 45vh;
+  width: 25vw;
+  overflow: hidden;
+  border-radius: 25px 25px 0 0;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .imgcrew1 {
+    width: 60vw;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  /*  Telefono  */
+  .imgcrew1 {
+    width: 80vw;
+  }
+}
+
+.nomecrew {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  top: 4vh;
+  font-family: Monument_medium;
+  font-size: 1.5vw;
+  width: 25vw;
+  text-align: center;
+  z-index: 2;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .nomecrew {
+    width: 60vw;
+    font-size: 4vw;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  /*  Telefono  */
+  .nomecrew {
+    width: 80vw;
+  }
+}
+
+.txtcrew {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  top: 4vh;
+  font-family: Monument_regular;
+  font-size: 1vw;
+  width: 25vw;
+  text-align: center;
+  z-index: 2;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .txtcrew {
+    width: 60vw;
+    font-size: 2.5vw;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  /*  Telefono  */
+  .txtcrew {
+    width: 80vw;
+  }
+}
+
+.titolettocrew {
+  position: absolute;
+  top: 460vh;
+  margin: 0;
+  padding: 0;
+  font-family: Monument_medium;
+  font-size: 2vw;
+  width: 100vw;
+  z-index: 2;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .titolettocrew {
+    top: 410vh;
+    font-size: 7vw;
+  }
+}
+
+.freccinaorizzontale {
+  background-image: url("../asset/freccinascrollnera.png");
+  background-size: 3000% 100%;
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+  z-index: 2;
+  position: absolute;
+  top: 531vh;
+  left: 95vw;
+  height: 5vw;
+  width: 3vw;
+  transform: rotate(-90deg);
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .freccinaorizzontale {
+    display: none;
+  }
+}
+
+/*-------------------------------CAMERETTA 3-------------------------------*/
+
+.ctadadefinire3 {
+  background-color: #ffc5eb;
+  top: 550vh;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .ctadadefinire3 {
+    top: 500vh;
+  }
+}
+
+/*-------------------------------FOOTER CHI SIAMO-------------------------------*/
+
+.footercrew {
+  background-color: #fff384;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  color: #000000;
+  font-family: Monument_medium;
+  font-size: 1.5vw;
+  width: 100vw;
+  height: 33vh;
+  top: 650vh;
+  margin: 0;
+  text-align: left;
+  z-index: 100;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Ipad mini  */
+  .footercrew {
+    top: 600vh;
+    height: 20vh;
+  }
+}
+
+/*-------------------------------TRIGGER CHI SIAMO-------------------------------*/
+
+.triggerc1 {
+  position: absolute;
+  top: 440vh;
+  left: 0;
+  width: 10vw;
+  height: 1px;
+  border: 1px solid gold;
+  z-index: 1000;
+  display: none;
+}
+
+.triggerc2 {
+  position: absolute;
+  top: 90vh;
+  left: 0;
+  width: 10vw;
+  height: 260vh;
+  border: 1px solid rebeccapurple;
+  z-index: 1000;
+  display: none;
+}
+
+/*-------------------------------EXTRA-------------------------------*/
+
+mark {
+  background-color: #fff384;
+}
+
+/* overlay grana x tutto il sito*/
+#grain {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-repeat: repeat;
+  mix-blend-mode: multiply;
+  opacity: 0.4;
+  z-index: 1;
+  pointer-events: none;
+  background-image: url("..//asset/img/gif/grain.gif");
+  z-index: 100;
+}
