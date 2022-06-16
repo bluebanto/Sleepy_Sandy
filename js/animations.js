@@ -14,10 +14,12 @@ function openNav() {
     document.getElementById("myNav").style.width = "0%";
     document.getElementById("scrittemenù1").style.opacity = 0;
     document.getElementById("scrittemenù2").style.opacity = 0;
+    document.getElementById("scrittemenù3").style.opacity = 0;
   } else {
     document.getElementById("myNav").style.width = "100%";
     document.getElementById("scrittemenù1").style.opacity = 100;
     document.getElementById("scrittemenù2").style.opacity = 100;
+    document.getElementById("scrittemenù3").style.opacity = 100;
   }
 } //chiedere come togliere il brutto effetto sulle scritte
 
