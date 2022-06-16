@@ -1,14 +1,7 @@
 body {
   margin: 0;
-  height: 780vh;
+  height: 880vh;
   width: 100vw;
-}
-
-@media screen and (max-width: 768px) {
-  /*  Ipad mini  */
-  body {
-    height: 943vh;
-  }
 }
 
 div {
