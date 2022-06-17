@@ -7,7 +7,7 @@ body {
 @media screen and (max-width: 768px) {
   /*  Ipad mini  */
   body {
-    height: 943vh;
+    height: 713vh;
   }
 }
 
@@ -483,7 +483,7 @@ div {
 }
 
 .freccinascroll {
-  background-image: url("../asset/freccinascroll.png");
+  background-image: url('../asset/freccinascroll.png');
   background-size: 3000% 100%;
   background-repeat: no-repeat;
   background-position: 0% 50%;
@@ -498,7 +498,7 @@ div {
 @media screen and (max-width: 768px) {
   /*  Ipad mini  */
   .freccinascroll {
-    background-image: url("../asset/freccinascrollnera.png");
+    background-image: url('../asset/freccinascrollnera.png');
     top: 92vh;
     left: 87vw;
     height: 10vw;
@@ -2056,60 +2056,31 @@ div {
   z-index: 2;
 }
 
-.imgscreen1 {
-  width: 32vw;
-  height: 10vh;
-  margin-left: 5vw;
-  margin-right: 5vw;
-  overflow: hidden;
-}
-
-.imgscreen2 {
-  width: 32vw;
-  height: 50vh;
-  overflow: hidden;
-}
-
-.imgscreen3 {
-  width: 32vw;
-  height: 30vh;
-  overflow: hidden;
-}
-
-.imgscreen4 {
-  width: 32vw;
-  height: 10vh;
-  overflow: hidden;
-}
-
-.imgscreen5 {
-  width: 32vw;
-  height: 50vh;
-  overflow: hidden;
-}
-
-.imgscreen6 {
-  width: 32vw;
-  height: 30vh;
-  overflow: hidden;
-}
-
-.imgscreen7 {
-  width: 32vw;
-  height: 10vh;
-  overflow: hidden;
-}
-
-.imgscreen8 {
-  width: 32vw;
-  height: 50vh;
-  overflow: hidden;
-}
-
+.imgscreen1,
+.imgscreen2,
+.imgscreen3,
+.imgscreen4,
+.imgscreen5,
+.imgscreen6,
+.imgscreen7,
+.imgscreen8,
 .imgscreen9 {
   width: 32vw;
-  height: 30vh;
+  height: 10vh;
   overflow: hidden;
+}
+
+.imgscreen1 a img,
+.imgscreen2 a img,
+.imgscreen3 a img,
+.imgscreen4 a img,
+.imgscreen5 a img,
+.imgscreen6 a img,
+.imgscreen7 a img,
+.imgscreen8 a img,
+.imgscreen9 a img {
+  width: 130%;
+  margin-left: -15%;
 }
 
 .screenmobileorganizza {
@@ -2204,6 +2175,11 @@ div {
 .imgscreenmobile {
   overflow: hidden;
   margin: 5vh;
+}
+
+.imgscreenmobile a img {
+  width: 200%;
+  margin-left: -50%;
 }
 
 @media screen and (max-width: 390px) {
@@ -2985,7 +2961,7 @@ div {
 }
 
 .freccinaorizzontale {
-  background-image: url("../asset/freccinascrollnera.png");
+  background-image: url('../asset/freccinascrollnera.png');
   background-size: 3000% 100%;
   background-repeat: no-repeat;
   background-position: 0% 50%;
@@ -3094,6 +3070,6 @@ mark {
   opacity: 0.4;
   z-index: 1;
   pointer-events: none;
-  background-image: url("..//asset/img/gif/grain.gif");
+  background-image: url('..//asset/img/gif/grain.gif');
   z-index: 100;
 }

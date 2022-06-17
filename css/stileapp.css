@@ -7,7 +7,7 @@ body {
 @media screen and (max-width: 768px) {
   /*  Ipad mini  */
   body {
-    height: 943vh;
+    height: 713vh;
   }
 }
 
@@ -483,7 +483,7 @@ div {
 }
 
 .freccinascroll {
-  background-image: url("../asset/freccinascroll.png");
+  background-image: url('../asset/freccinascroll.png');
   background-size: 3000% 100%;
   background-repeat: no-repeat;
   background-position: 0% 50%;
@@ -498,7 +498,7 @@ div {
 @media screen and (max-width: 768px) {
   /*  Ipad mini  */
   .freccinascroll {
-    background-image: url("../asset/freccinascrollnera.png");
+    background-image: url('../asset/freccinascrollnera.png');
     top: 92vh;
     left: 87vw;
     height: 10vw;
@@ -2022,6 +2022,7 @@ div {
   justify-content: space-around;
   align-items: center;
   text-align: center;
+  vertical-align: baseline;
 }
 
 @media screen and (max-width: 768px) {
@@ -2058,9 +2059,23 @@ div {
 .imgscreen1 {
   width: 32vw;
   height: 10vh;
-  margin-left: 5vw;
-  margin-right: 5vw;
   overflow: hidden;
+}
+
+.imgscreen1 a img,
+.imgscreen2 a img,
+.imgscreen3 a img,
+.imgscreen4 a img,
+.imgscreen5 a img,
+.imgscreen6 a img,
+.imgscreen7 a img,
+.imgscreen8 a img,
+.imgscreen9 a img {
+  margin-top: 30px;
+  /* height: 78%; */
+  width: 50%;
+  transform: translate(-50%, 0);
+  margin-left: 50%;
 }
 
 .imgscreen2 {
@@ -2203,6 +2218,14 @@ div {
 .imgscreenmobile {
   overflow: hidden;
   margin: 5vh;
+}
+
+.imgscreenmobile a img {
+  height: 100%;
+  width: auto;
+  margin: 0 auto;
+  transform: translate(-50%, 0);
+  margin-left: 50%;
 }
 
 @media screen and (max-width: 390px) {
@@ -2984,7 +3007,7 @@ div {
 }
 
 .freccinaorizzontale {
-  background-image: url("../asset/freccinascrollnera.png");
+  background-image: url('../asset/freccinascrollnera.png');
   background-size: 3000% 100%;
   background-repeat: no-repeat;
   background-position: 0% 50%;
@@ -3093,6 +3116,6 @@ mark {
   opacity: 0.4;
   z-index: 1;
   pointer-events: none;
-  background-image: url("..//asset/img/gif/grain.gif");
+  background-image: url('..//asset/img/gif/grain.gif');
   z-index: 100;
 }

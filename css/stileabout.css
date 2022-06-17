@@ -7,7 +7,7 @@ body {
 @media screen and (max-width: 768px) {
   /*  Ipad mini  */
   body {
-    height: 943vh;
+    height: 620vh;
   }
 }
 
@@ -483,7 +483,7 @@ div {
 }
 
 .freccinascroll {
-  background-image: url("../asset/freccinascroll.png");
+  background-image: url('../asset/freccinascroll.png');
   background-size: 3000% 100%;
   background-repeat: no-repeat;
   background-position: 0% 50%;
@@ -498,7 +498,7 @@ div {
 @media screen and (max-width: 768px) {
   /*  Ipad mini  */
   .freccinascroll {
-    background-image: url("../asset/freccinascrollnera.png");
+    background-image: url('../asset/freccinascrollnera.png');
     top: 92vh;
     left: 87vw;
     height: 10vw;
@@ -2557,6 +2557,12 @@ div {
   z-index: 3;
 }
 
+.video1 video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 @media screen and (max-width: 768px) {
   /*  Ipad mini  */
   .video1 {
@@ -2757,6 +2763,7 @@ div {
     top: 100vh;
     height: 100vh;
     background-color: #a07eff;
+    background-color: #ff5209;
   }
 
   .slide2mobilecs {
@@ -2766,6 +2773,7 @@ div {
     top: 200vh;
     height: 100vh;
     background-color: #dfff9c;
+    background-color: #f33949;
   }
 
   .slide3mobilecs {
@@ -2775,6 +2783,7 @@ div {
     top: 300vh;
     height: 100vh;
     background-color: #fa4928;
+    background-color: #ff5209;
   }
 }
 
@@ -2985,7 +2994,7 @@ div {
 }
 
 .freccinaorizzontale {
-  background-image: url("../asset/freccinascrollnera.png");
+  background-image: url('../asset/freccinascrollnera.png');
   background-size: 3000% 100%;
   background-repeat: no-repeat;
   background-position: 0% 50%;
@@ -3094,6 +3103,6 @@ mark {
   opacity: 0.4;
   z-index: 1;
   pointer-events: none;
-  background-image: url("..//asset/img/gif/grain.gif");
+  background-image: url('..//asset/img/gif/grain.gif');
   z-index: 100;
 }
